@@ -299,16 +299,6 @@ Business analysis includes:
 
 ---
 
-# 💻 Technology Overview
-
-| Category | Technology |
-|------------|------------|
-| Database | Microsoft SQL Server |
-| Query Language | SQL |
-| Version Control | Git |
-| Repository | GitHub |
-
----
 
 # 📷 Project Screenshots
 
@@ -367,25 +357,6 @@ end-to-end-sql-data-cleaning-and-business-analytics
 
 ---
 
-# 🏆 Project Highlights
-
-- End-to-End SQL Data Cleaning Pipeline
-- Industry-Style Data Preparation Workflow
-- Professional Data Profiling
-- Data Quality Assessment
-- Customer Data Cleaning
-- Product Data Cleaning
-- Order Data Cleaning
-- Data Validation
-- Dashboard KPI Generation
-- Customer Analytics
-- Product Analytics
-- Sales Analytics
-- Modular SQL Architecture
-- Business Insight Generation
-- Clean Repository Structure
-
----
 
 # 💡 SQL Skills Demonstrated
 
@@ -412,20 +383,6 @@ end-to-end-sql-data-cleaning-and-business-analytics
 - Sales Analytics
 - Business Intelligence
 
----
-
-# 🚀 Future Improvements
-
-Potential future enhancements include:
-
-- SQL Views
-- Stored Procedures
-- Index Optimization
-- Query Performance Tuning
-- Power BI Dashboard Integration
-- Data Quality Scorecards
-- Automated Validation Pipeline
-- SQL Server Agent Automation
 
 ---
 
