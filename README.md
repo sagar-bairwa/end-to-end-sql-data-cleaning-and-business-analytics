@@ -1,209 +1,264 @@
-# ⚙ Project Workflow
+# 📊 End-to-End SQL Data Cleaning & Business Insights Pipeline
 
-The project follows a structured SQL workflow that mirrors the data preparation process commonly used by Data Analysts before building reports or dashboards.
+An end-to-end SQL Data Analytics project built using **Microsoft SQL Server** that demonstrates how raw business data can be transformed into clean, validated, and analytics-ready datasets through professional data profiling, data quality assessment, data cleaning, validation, KPI reporting, and business insight generation.
 
-The complete workflow is divided into **ten logical stages**, beginning with understanding the raw data and ending with business insight generation.
+Unlike traditional SQL projects that only answer business questions, this project follows the complete **Data Preparation Pipeline** used by Data Analysts before building dashboards and reports.
 
 ---
 
-# 📊 Stage 1 — Data Profiling
+## 🛠 Tech Stack
 
-The first stage focuses on understanding the structure and characteristics of the datasets before performing any transformations.
+<p align="left">
 
-### Objectives
+<img src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+
+</p>
+
+---
+
+# 📋 Project Summary
+
+| Attribute | Details |
+|------------|---------|
+| Project Type | End-to-End SQL Data Cleaning Pipeline |
+| Domain | E-Commerce |
+| Database | Microsoft SQL Server |
+| Datasets | Customers, Products, Orders |
+| SQL Modules | 10 |
+| Workflow | Data Profiling → Cleaning → Validation → Business Insights |
+| Focus | Data Cleaning & Business Analytics |
+
+---
+
+# ⭐ Key Features
+
+- End-to-End SQL Data Preparation Pipeline
+- Data Profiling & Exploration
+- Data Quality Assessment
+- Customer Data Cleaning
+- Product Data Cleaning
+- Order Data Cleaning
+- Data Validation
+- Dashboard KPI Generation
+- Customer Insights
+- Product Insights
+- Sales Insights
+- Modular SQL Project Structure
+
+---
+
+# 📈 SQL Data Preparation Workflow
+
+![Workflow](screenshots/sql_data_cleaning_workflow.png)
+
+---
+
+# 📖 Project Overview
+
+Real-world business data is rarely analysis-ready. Missing values, duplicate records, invalid references, inconsistent formats, and incorrect relationships often reduce the reliability of reports and dashboards.
+
+This project demonstrates an industry-style SQL workflow that transforms raw customer, product, and order datasets into reliable analytical datasets before performing business analysis.
+
+The project is organized into separate SQL modules, making each stage of the pipeline easier to understand, maintain, and extend.
+
+---
+
+# ❗ Business Problem
+
+📄 [Business Requirements](business_requirements.md)
+
+An e-commerce company wants to generate reliable business insights from customer, product, and order data.
+
+However, the raw datasets contain several quality issues that affect reporting accuracy.
+
+Before business analysis can begin, the datasets must be profiled, cleaned, validated, and transformed into analytics-ready data.
+
+---
+
+# 🎯 Project Objectives
 
 - Understand dataset structure
-- Count records in each table
-- Review available columns
-- Explore categorical distributions
-- Identify missing values
-- Perform initial data exploration
-
-### Activities Performed
-
-- Row count analysis
-- Column exploration
-- Category distribution
-- Customer distribution
-- Product distribution
-- Basic dataset exploration
-
-### Outcome
-
-A clear understanding of the datasets before beginning the cleaning process.
+- Perform data profiling
+- Identify data quality issues
+- Clean customer data
+- Clean product data
+- Clean order data
+- Validate transformed datasets
+- Generate dashboard KPIs
+- Extract business insights
+- Follow an industry-style SQL workflow
 
 ---
 
-# 🔍 Stage 2 — Data Quality Assessment
+# 📂 Dataset Overview
 
-Once the datasets are understood, a detailed quality assessment is performed to identify issues that may affect reporting and business analysis.
+The project uses three relational datasets.
 
-### Data Quality Checks
+| Dataset | Description |
+|----------|-------------|
+| Customers | Customer demographic and location information |
+| Products | Product catalog, categories and pricing |
+| Orders | Customer purchase transactions |
 
-- Duplicate Orders
+These datasets are connected using relational keys and serve as the foundation for the complete SQL pipeline.
+
+---
+
+# ⚠ Data Quality Challenges
+
+The raw datasets contain several issues commonly found in real-world business data.
+
+The project identifies and resolves:
+
+- Duplicate records
 - Invalid Customer IDs
 - Invalid Product IDs
 - Invalid Order IDs
-- Missing Customer Records
-- Missing Product Records
-- Invalid Relationships
-- Orphan Records
-- Null Value Analysis
-
-### Outcome
-
-A comprehensive report identifying all quality issues requiring correction.
+- Missing values
+- Incorrect relationships
+- Inconsistent formatting
+- Invalid transactional records
+- Referential integrity issues
 
 ---
 
-# 🧹 Stage 3 — Customer Data Cleaning
+# ⚙ SQL Project Workflow
 
-The customer dataset is cleaned to improve consistency and ensure accurate customer analysis.
+The project is divided into ten logical stages.
 
-### Cleaning Operations
+## 📊 Stage 1 — Data Profiling
 
-- Removed duplicate records
-- Standardized customer information
-- Validated customer IDs
-- Corrected formatting inconsistencies
-- Removed invalid records
+Purpose:
 
-### Outcome
-
-A clean and reliable customer dataset ready for analysis.
+- Understand raw datasets
+- Explore table structure
+- Review record counts
+- Analyze category distribution
+- Detect missing values
 
 ---
 
-# 📦 Stage 4 — Product Data Cleaning
+## 🔍 Stage 2 — Data Quality Report
 
-Product information is cleaned to improve consistency across product-related analysis.
+Purpose:
 
-### Cleaning Operations
-
-- Standardized product information
-- Corrected inconsistent categories
-- Removed invalid product records
-- Validated product identifiers
-
-### Outcome
-
-A structured and consistent product dataset.
+- Identify duplicate records
+- Find invalid IDs
+- Detect orphan records
+- Measure data quality
+- Generate quality report
 
 ---
 
-# 🛒 Stage 5 — Order Data Cleaning
+## 🧹 Stage 3 — Customer Cleaning
 
-Order records are validated and cleaned to ensure accurate sales reporting.
+Cleaning includes:
 
-### Cleaning Operations
-
-- Removed invalid orders
-- Removed orphan transactions
-- Corrected invalid references
-- Validated order relationships
-- Eliminated duplicate transactions
-
-### Outcome
-
-Reliable transactional data for business reporting.
-
----
-
-# ✅ Stage 6 — Data Validation
-
-After cleaning, multiple validation queries are executed to verify the integrity of the transformed datasets.
-
-### Validation Checks
-
-- Record count validation
-- Duplicate validation
-- Referential integrity validation
+- Duplicate removal
+- Standardization
+- Invalid record removal
 - Customer validation
+
+---
+
+## 📦 Stage 4 — Product Cleaning
+
+Cleaning includes:
+
+- Category standardization
+- Invalid product removal
 - Product validation
-- Order validation
+- Formatting corrections
+
+---
+
+## 🛒 Stage 5 — Order Cleaning
+
+Cleaning includes:
+
+- Invalid order removal
+- Duplicate orders
+- Invalid references
 - Relationship validation
 
-### Outcome
+---
 
-Verified datasets with improved consistency and reliability.
+## ✅ Stage 6 — Data Validation
+
+Validation ensures:
+
+- No duplicate records
+- Valid customer IDs
+- Valid product IDs
+- Correct relationships
+- Analytics-ready datasets
 
 ---
 
-# 📈 Stage 7 — Dashboard KPIs
+## 📈 Stage 7 — Dashboard KPIs
 
-Once the datasets have been cleaned and validated, SQL is used to generate business-ready Key Performance Indicators.
-
-### KPIs Generated
+SQL generates business-ready KPIs including:
 
 - Total Revenue
-- Average Revenue per Customer
 - Total Customers
 - Total Products
 - Total Orders
-
-These KPIs provide a high-level overview of business performance and can be directly used in reporting dashboards.
-
----
-
-# 👥 Stage 8 — Customer Insights
-
-Customer-focused SQL analysis is performed to better understand purchasing behavior.
-
-### Insights Generated
-
-- Customer Distribution
-- Top Customers
-- Repeat Customers
-- High Value Customers
-- Customer Spending Analysis
 - Average Revenue per Customer
 
 ---
 
-# 📦 Stage 9 — Product Insights
+## 👥 Stage 8 — Customer Insights
 
-Product-level analysis is performed to identify high-performing and low-performing products.
+Business analysis includes:
 
-### Insights Generated
-
-- Top Selling Products
-- Product Performance
-- Revenue by Product
-- Category Performance
-- Best Performing Categories
+- Customer Distribution
+- Repeat Customers
+- High Value Customers
+- Customer Spending
+- Revenue per Customer
 
 ---
 
-# 💰 Stage 10 — Sales Insights
+## 📦 Stage 9 — Product Insights
 
-The final stage focuses on sales trends and business performance.
+Business analysis includes:
 
-### Insights Generated
+- Best Selling Products
+- Low Performing Products
+- Product Revenue
+- Category Performance
+- Product Ranking
+
+---
+
+## 💰 Stage 10 — Sales Insights
+
+Business analysis includes:
 
 - Monthly Revenue Trend
-- Sales Performance
-- Revenue Distribution
-- Order Analysis
 - Revenue Contribution
+- Order Analysis
+- Sales Performance
 - Business Growth Indicators
 
 ---
 
 # 🧠 SQL Concepts Applied
 
-This project demonstrates practical usage of SQL concepts commonly used by Data Analysts.
-
-## Querying
+## Data Exploration
 
 - SELECT
 - DISTINCT
 - WHERE
 - ORDER BY
-- TOP
 
----
-
-## Aggregation
+### Aggregation
 
 - GROUP BY
 - HAVING
@@ -213,24 +268,18 @@ This project demonstrates practical usage of SQL concepts commonly used by Data 
 - MIN()
 - MAX()
 
----
-
-## Joins
+### Joins
 
 - INNER JOIN
 - LEFT JOIN
 
----
-
-## Conditional Logic
+### Conditional Logic
 
 - CASE
 - ISNULL()
 - COALESCE()
 
----
-
-## Data Cleaning
+### Data Cleaning
 
 - UPDATE
 - DELETE
@@ -239,9 +288,7 @@ This project demonstrates practical usage of SQL concepts commonly used by Data 
 - CAST()
 - CONVERT()
 
----
-
-## Advanced SQL
+### Advanced SQL
 
 - Common Table Expressions (CTEs)
 - Window Functions
@@ -260,6 +307,26 @@ This project demonstrates practical usage of SQL concepts commonly used by Data 
 | Query Language | SQL |
 | Version Control | Git |
 | Repository | GitHub |
+
+---
+
+# 📷 Project Screenshots
+
+## Data Quality Assessment
+
+![Invalid Entries](screenshots/invalid_entries.png)
+
+---
+
+## Data Cleaning
+
+![Cleaning](screenshots/clean_invalid_data.png)
+
+---
+
+## Dashboard KPIs
+
+![KPIs](screenshots/KPIs.png)
 
 ---
 
@@ -300,37 +367,11 @@ end-to-end-sql-data-cleaning-and-business-analytics
 
 ---
 
-# 📷 Project Screenshots
-
-## SQL Data Preparation Workflow
-
-![Workflow](screenshots/sql_data_cleaning_workflow.png)
-
----
-
-## Data Quality Assessment
-
-![Invalid Entries](screenshots/invalid_entries.png)
-
----
-
-## Data Cleaning Validation
-
-![Data Cleaning](screenshots/clean_invalid_data.png)
-
----
-
-## Dashboard KPIs
-
-![KPIs](screenshots/KPIs.png)
-
----
-
 # 🏆 Project Highlights
 
 - End-to-End SQL Data Cleaning Pipeline
-- Industry-Style SQL Workflow
-- Data Profiling
+- Industry-Style Data Preparation Workflow
+- Professional Data Profiling
 - Data Quality Assessment
 - Customer Data Cleaning
 - Product Data Cleaning
@@ -343,7 +384,6 @@ end-to-end-sql-data-cleaning-and-business-analytics
 - Modular SQL Architecture
 - Business Insight Generation
 - Clean Repository Structure
-- Production-Oriented SQL Development
 
 ---
 
@@ -359,10 +399,10 @@ end-to-end-sql-data-cleaning-and-business-analytics
 ### SQL Development
 
 - Query Writing
-- Aggregations
 - Joins
+- Aggregations
 - Window Functions
-- CTEs
+- Common Table Expressions (CTEs)
 
 ### Business Analytics
 
@@ -376,16 +416,16 @@ end-to-end-sql-data-cleaning-and-business-analytics
 
 # 🚀 Future Improvements
 
-Possible enhancements for future versions of this project include:
+Potential future enhancements include:
 
-- Stored Procedures for automation
-- SQL Views for reporting
-- Index optimization
-- Performance tuning
-- Integration with Power BI
-- Interactive dashboard creation
-- Data quality scorecards
-- Automated data validation pipeline
+- SQL Views
+- Stored Procedures
+- Index Optimization
+- Query Performance Tuning
+- Power BI Dashboard Integration
+- Data Quality Scorecards
+- Automated Validation Pipeline
+- SQL Server Agent Automation
 
 ---
 
@@ -393,6 +433,12 @@ Possible enhancements for future versions of this project include:
 
 **Sagar Bairwa**
 
-Aspiring **Data Analyst** passionate about transforming raw data into actionable business insights through SQL, Python, Power BI, and modern data analytics tools.
+📧 Email: sagar.bairwa.tech@gmail.com
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+💼 LinkedIn: https://linkedin.com/in/sagarbairwa
+
+💻 GitHub: https://github.com/sagar-bairwa
+
+---
+
+⭐ If you found this project helpful, consider giving it a Star.
