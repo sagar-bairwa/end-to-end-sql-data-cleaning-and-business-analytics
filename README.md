@@ -138,6 +138,8 @@ Purpose:
 - Measure data quality
 - Generate quality report
 
+![Invalid Entries](screenshots/invalid_entries.png)
+
 ---
 
 ## 🧹 Stage 3 — Customer Cleaning
@@ -183,6 +185,8 @@ Validation ensures:
 - Correct relationships
 - Analytics-ready datasets
 
+![Cleaning](screenshots/clean_invalid_data.png)
+
 ---
 
 ## 📈 Stage 7 — Dashboard KPIs
@@ -194,6 +198,8 @@ SQL generates business-ready KPIs including:
 - Total Products
 - Total Orders
 - Average Revenue per Customer
+
+![KPIs](screenshots/KPIs.png)
 
 ---
 
