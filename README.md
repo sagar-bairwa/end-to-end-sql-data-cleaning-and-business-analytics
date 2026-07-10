@@ -290,26 +290,6 @@ Business analysis includes:
 ---
 
 
-# 📷 Project Screenshots
-
-## Data Quality Assessment
-
-![Invalid Entries](screenshots/invalid_entries.png)
-
----
-
-## Data Cleaning
-
-![Cleaning](screenshots/clean_invalid_data.png)
-
----
-
-## Dashboard KPIs
-
-![KPIs](screenshots/KPIs.png)
-
----
-
 # 📁 Repository Structure
 
 ```text
