@@ -36,22 +36,6 @@ Unlike traditional SQL projects that only answer business questions, this projec
 
 ---
 
-# ⭐ Key Features
-
-- End-to-End SQL Data Preparation Pipeline
-- Data Profiling & Exploration
-- Data Quality Assessment
-- Customer Data Cleaning
-- Product Data Cleaning
-- Order Data Cleaning
-- Data Validation
-- Dashboard KPI Generation
-- Customer Insights
-- Product Insights
-- Sales Insights
-- Modular SQL Project Structure
-
----
 
 # 📈 SQL Data Preparation Workflow
 
