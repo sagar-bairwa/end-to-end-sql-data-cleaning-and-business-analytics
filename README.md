@@ -337,14 +337,6 @@ end-to-end-sql-data-cleaning-and-business-analytics
 - Data Validation
 - Data Transformation
 
-### SQL Development
-
-- Query Writing
-- Joins
-- Aggregations
-- Window Functions
-- Common Table Expressions (CTEs)
-
 ### Business Analytics
 
 - KPI Reporting
